@@ -31,6 +31,14 @@ fn main() {
     // let mut spaces = "                        ";
     // spaces = spaces.len();
 
+    let guess: u32 = "42".parse().expect("숫자가 아닙니다.");
+    println!("guess 의 값: {}", guess);
 
+    // ERROR : 정적 타입을 명시해주어야 한다.
+    // let guess = "42".parse().expect("숫자가 아닙니다.");
+
+    // 러스트에서 부동 소수점 타입 기본: f64
+    let f1 = 2.0; // f64
+    let f2: f32 = 3.0; // f32
 
 }
